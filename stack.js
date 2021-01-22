@@ -27,6 +27,11 @@ class Stack {
     this.top.next = theNextPoint;
     return this;
   }
+
+  pop() {
+    this.length > 0 ? this.length-- : undefined;
+    return this.top = this.top?.next;
+  }
 }
 
 function newNode(value) {
